@@ -8,10 +8,13 @@ import com.google.common.collect.ImmutableMap;
 import io.airbyte.config.persistence.ConfigRepository;
 import io.airbyte.oauth.flows.AsanaOAuthFlow;
 import io.airbyte.oauth.flows.DriftOAuthFlow;
-import io.airbyte.oauth.flows.FacebookMarketingOAuthFlow;
 import io.airbyte.oauth.flows.GithubOAuthFlow;
 import io.airbyte.oauth.flows.SalesforceOAuthFlow;
+import io.airbyte.oauth.flows.SurveymonkeyOAuthFlow;
 import io.airbyte.oauth.flows.TrelloOAuthFlow;
+import io.airbyte.oauth.flows.facebook.FacebookMarketingOAuthFlow;
+import io.airbyte.oauth.flows.facebook.FacebookPagesOAuthFlow;
+import io.airbyte.oauth.flows.facebook.InstagramOAuthFlow;
 import io.airbyte.oauth.flows.google.GoogleAdsOAuthFlow;
 import io.airbyte.oauth.flows.google.GoogleAnalyticsOAuthFlow;
 import io.airbyte.oauth.flows.google.GoogleSearchConsoleOAuthFlow;
@@ -27,12 +30,15 @@ public class OAuthImplementationFactory {
     OAUTH_FLOW_MAPPING = ImmutableMap.<String, OAuthFlowImplementation>builder()
         .put("airbyte/source-asana", new AsanaOAuthFlow(configRepository))
         .put("airbyte/source-facebook-marketing", new FacebookMarketingOAuthFlow(configRepository))
+        .put("airbyte/source-facebook-pages", new FacebookPagesOAuthFlow(configRepository))
         .put("airbyte/source-github", new GithubOAuthFlow(configRepository))
         .put("airbyte/source-google-ads", new GoogleAdsOAuthFlow(configRepository))
         .put("airbyte/source-google-analytics-v4", new GoogleAnalyticsOAuthFlow(configRepository))
         .put("airbyte/source-google-search-console", new GoogleSearchConsoleOAuthFlow(configRepository))
         .put("airbyte/source-google-sheets", new GoogleSheetsOAuthFlow(configRepository))
+        .put("airbyte/source-instagram", new InstagramOAuthFlow(configRepository))
         .put("airbyte/source-salesforce", new SalesforceOAuthFlow(configRepository))
+        .put("airbyte/source-surveymonkey", new SurveymonkeyOAuthFlow(configRepository))
         .put("airbyte/source-trello", new TrelloOAuthFlow(configRepository))
         .put("airbyte/source-drift", new DriftOAuthFlow(configRepository))
         .build();
