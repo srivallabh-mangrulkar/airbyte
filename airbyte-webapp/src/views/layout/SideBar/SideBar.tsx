@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
-import { faSlack } from "@fortawesome/free-brands-svg-icons";
 import { FormattedMessage } from "react-intl";
 import { NavLink } from "react-router-dom";
 
@@ -11,11 +9,9 @@ import { useConfig } from "config";
 import useWorkspace from "hooks/services/useWorkspace";
 
 import { Link } from "components";
-import Version from "components/Version";
 
 import ConnectionsIcon from "./components/ConnectionsIcon";
 import DestinationIcon from "./components/DestinationIcon";
-import DocsIcon from "./components/DocsIcon";
 import OnboardingIcon from "./components/OnboardingIcon";
 import SettingsIcon from "./components/SettingsIcon";
 import SourceIcon from "./components/SourceIcon";
@@ -103,7 +99,7 @@ const SideBar: React.FC = () => {
               : Routes.Connections
           }
         >
-          <img src="/simpleLogo.svg" alt="logo" height={33} width={33} />
+          <img src="/zbyte-light.svg" alt="logo" height={33} width={33} />
         </Link>
         <Menu>
           {workspace.displaySetupWizard ? (
@@ -159,38 +155,6 @@ const SideBar: React.FC = () => {
           </li>
         </Menu>
       </div>
-      <Menu>
-        <li>
-          <MenuLinkItem href={config.ui.updateLink} target="_blank">
-            <HelpIcon icon={faRocket} />
-            <Text>
-              <FormattedMessage id="sidebar.update" />
-            </Text>
-          </MenuLinkItem>
-        </li>
-        <li>
-          <MenuLinkItem href={config.ui.slackLink} target="_blank">
-            {/*@ts-ignore slack icon fails here*/}
-            <HelpIcon icon={faSlack} />
-            <Text>
-              <FormattedMessage id="sidebar.slack" />
-            </Text>
-          </MenuLinkItem>
-        </li>
-        <li>
-          <MenuLinkItem href={config.ui.docsLink} target="_blank">
-            <DocsIcon />
-            <Text>
-              <FormattedMessage id="sidebar.docs" />
-            </Text>
-          </MenuLinkItem>
-        </li>
-        {config.version ? (
-          <li>
-            <Version primary />
-          </li>
-        ) : null}
-      </Menu>
     </Bar>
   );
 };

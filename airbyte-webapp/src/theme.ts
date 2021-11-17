@@ -1,12 +1,12 @@
 export const theme = {
-  primaryColor: "#615EFF",
+  primaryColor: "#0000ff",
   primaryColor25: "rgba(98, 94, 255, .25)",
   primaryColor12: "rgba(103, 87, 255, .12)",
   mediumPrimaryColor: "#36348F",
   mediumPrimaryColor20: "rgba(73, 68, 193, .2)",
-  darkPrimaryColor: "#010047",
+  darkPrimaryColor: "#050a30",
   darkPrimaryColor60: "rgba(1, 0, 71, .6)",
-  brightPrimaryColor: "#C5C4FF",
+  brightPrimaryColor: "ffffff",
   lightPrimaryColor: "#EDEBFF",
 
   brightColor: "#F7F6FF",
@@ -18,7 +18,7 @@ export const theme = {
   successColor: "#67DAE1",
   successColor10: "rgba(69, 230, 152, .1)",
   successColor20: "rgba(69, 230, 152, .2)",
-  backgroundColor: "#FEF9F4",
+  backgroundColor: "ffffff",
   shadowColor: "rgba(0, 0, 0, 0.25)",
   cardShadowColor: "rgba(26, 25, 77, 0.12)",
 
@@ -45,7 +45,7 @@ export const theme = {
   whiteColor5: "rgba(255, 255, 255, .5)",
   transparentColor: "rgba(255, 255, 255, 0)",
 
-  regularFont: "Inter, Arial, sans-serif",
+  regularFont: " -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen",
   highlightFont: "Montserrat, Arial, sans-serif",
   codeFont: "Courier Prime, Arial, sans-serif",
   italicFont: "Shrikhand, serif",

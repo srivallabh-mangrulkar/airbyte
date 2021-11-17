@@ -1,25 +1,25 @@
 {
-  "short_name": "Airbyte",
-  "name": "Airbyte",
+  "short_name": "Zbyte",
+  "name": "Zbyte",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "zbyte-light.svg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/svg"
     },
     {
-      "src": "logo112.png",
-      "type": "image/png",
+      "src": "zbyte-light.svg",
+      "type": "image/svg",
       "sizes": "112x112"
     },
     {
-      "src": "logo224.png",
-      "type": "image/png",
+      "src": "zbyte-light.svg",
+      "type": "image/svg",
       "sizes": "224x224"
     },
     {
-      "src": "logo336.png",
-      "type": "image/png",
+      "src": "zbyte-light.svg",
+      "type": "image/svg",
       "sizes": "336x336"
     }
   ],
