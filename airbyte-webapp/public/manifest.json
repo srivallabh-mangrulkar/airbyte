@@ -1,6 +1,6 @@
 {
   "short_name": "Zbyte",
-  "name": "Zbyte",
+  "name": "Zbyte Enterprise Connectors",
   "icons": [
     {
       "src": "zbyte-light.svg",
@@ -13,7 +13,7 @@
       "sizes": "112x112"
     },
     {
-      "src": "zbyte-light.svg",
+      "src": "zbyte-dark.svg",
       "type": "image/svg",
       "sizes": "224x224"
     },
@@ -26,5 +26,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#625EFF",
-  "background_color": "#F8F8FF"
+  "background_color": "#ffffff"
 }

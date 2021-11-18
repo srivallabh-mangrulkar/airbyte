@@ -2,12 +2,12 @@
   "webapp.cannotReachServer": "Cannot reach server. The server may still be starting up.",
   "notifications.error.health": "Cannot reach server",
 
-  "sidebar.sources": "Sources",
-  "sidebar.destinations": "Dashboard",
+  "sidebar.sources": "Enterprise Data Source",
+  "sidebar.destinations": "Return to Zbyte Dashboard",
   "sidebar.admin": "Admin",
   "sidebar.help": "Help",
   "sidebar.docs": "Docs",
-  "sidebar.connections": "Connections",
+  "sidebar.connections": "Enterprise Connectors",
   "sidebar.settings": "Settings",
   "sidebar.onboarding": "Onboarding",
 
@@ -23,15 +23,15 @@
   "form.destinationName.placeholder": "Your destination name",
   "form.connectionName.placeholder": "Name",
   "form.name": "Name *",
-  "form.sourceName.message": "Pick a name to help you identify this source in Airbyte",
-  "form.destinationName.message": "Pick a name to help you identify this destination in Airbyte",
-  "form.connectionName.message": "Pick a name to help you identify this source in Airbyte",
+  "form.sourceName.message": "Pick a name to help you identify this source in Zbyte Enterprise Connectors",
+  "form.destinationName.message": "Pick a name to help you identify this destination in Zbyte Enterprise Connectors",
+  "form.connectionName.message": "Pick a name to help you identify this source in Zbyte Connectors",
   "form.sourceType": "Source type",
   "form.destinationType": "Destination type",
   "form.connectionType": "Connector type",
   "form.frequency": "Sync frequency",
   "form.frequency.placeholder": "Select a frequency",
-  "form.frequency.message": "Set how often Airbyte attempts to replicate data.",
+  "form.frequency.message": "Set how often Zbyte attempts to replicate data.",
   "form.dataType": "Data type",
   "form.cleanedName": "Cleaned name",
   "form.syncSettings": "Sync settings",
@@ -419,6 +419,6 @@
   "credits.creditUsage": "Credit Usage",
   "credits.totalUsage": "Total usage",
 
-  "demo.message.title": "This Airbyte demo is read-only",
+  "demo.message.title": "This Zbyte demo is read-only",
   "demo.message.body": "You cannot add or edit any connectors. You will see error messages on purpose if you try to do so."
 }

@@ -33,7 +33,7 @@ export enum Routes {
   Onboarding = "/onboarding",
 
   Connections = "/connections",
-  Destination = "https://www.google.com",
+  Destination = "/destination",
   Source = "/source",
   Connection = "/connection",
   ConnectionNew = "/new-connection",

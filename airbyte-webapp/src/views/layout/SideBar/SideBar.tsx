@@ -18,8 +18,8 @@ import SourceIcon from "./components/SourceIcon";
 import { NotificationIndicator } from "./NotificationIndicator";
 
 const Bar = styled.nav`
-  width: 100px;
-  min-width: 65px;
+  width: 130px;
+  min-width: 75px;
   height: 100%;
   background: ${({ theme }) => theme.darkPrimaryColor};
   padding: 23px 3px 15px 4px;
@@ -99,7 +99,7 @@ const SideBar: React.FC = () => {
               : Routes.Connections
           }
         >
-          <img src="/zbyte-light.svg" alt="logo" height={33} width={33} />
+          <img src="/zbyte-light.svg" alt="logo" height={65} width={65} />
         </Link>
         <Menu>
           {workspace.displaySetupWizard ? (
@@ -113,6 +113,14 @@ const SideBar: React.FC = () => {
             </li>
           ) : null}
           <li>
+            <MenuItem to={Routes.Destination} activeClassName="active">
+              <DestinationIcon />
+              <Text>
+                <FormattedMessage id="sidebar.destinations" />
+              </Text>
+            </MenuItem>
+          </li>
+          <li>
             <MenuItem to={Routes.Connections} activeClassName="active">
               <ConnectionsIcon />
               <Text>
@@ -125,14 +133,6 @@ const SideBar: React.FC = () => {
               <SourceIcon />
               <Text>
                 <FormattedMessage id="sidebar.sources" />
-              </Text>
-            </MenuItem>
-          </li>
-          <li>
-            <MenuItem to={Routes.Destination} activeClassName="active">
-              <DestinationIcon />
-              <Text>
-                <FormattedMessage id="sidebar.destinations" />
               </Text>
             </MenuItem>
           </li>

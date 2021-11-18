@@ -1,8 +1,8 @@
 import { create } from "@storybook/theming/create";
-import Image from "./logo.png";
+import Image from "./zbyte-light.svg";
 
 export default create({
-  brandTitle: "Airbyte",
-  brandUrl: "https://airbyte.com",
+  brandTitle: "Zbyte Enterprise Connectors",
+  brandUrl: "https://zbyte.io",
   brandImage: Image,
 });
